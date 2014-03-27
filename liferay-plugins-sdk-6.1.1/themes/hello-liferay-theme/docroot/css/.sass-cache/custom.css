@@ -32,7 +32,8 @@ body {
   top: 55px; }
 
 #banner {
-  background-image: url(../images/header-chilli.jpg); }
+  background: url(../images/header-chilli.jpg) no-repeat center fixed;
+  background-color: white; }
 
 /* ---------- Logo ---------- */
 .logo {
