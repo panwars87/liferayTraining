@@ -1,0 +1,24 @@
+/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
+
+/* ---------- Add/remove page ---------- */
+
+.modify-pages {
+	li {
+		position: relative;
+		display: inline-block;
+	}
+
+	.delete-tab {
+		background: #333 url(../images/portlet/close_borderless.png) no-repeat 50%;
+		cursor: pointer;
+		display: block;
+		height: 8px;
+		margin-top: -7px;
+		padding: 3px;
+		position: absolute;
+		right: 1px;
+		text-indent: -9999em;
+		top: 50%;
+		width: 8px;
+	}
+}
