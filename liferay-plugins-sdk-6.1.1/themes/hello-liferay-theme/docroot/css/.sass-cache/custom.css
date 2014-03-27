@@ -27,10 +27,12 @@ body {
   font: 62.5%/1.4 Arial, Helvetica, Verdana, sans-serif; }
 
 #wrapper {
-  background: steelblue; }
+  background: steelblue;
+  position: relative;
+  top: 55px; }
 
-#header {
-  background-image: url(../images/header-bg.jpg); }
+#banner {
+  background-image: url(../images/header-chilli.jpg); }
 
 /* ---------- Logo ---------- */
 .logo {
@@ -43,8 +45,7 @@ body {
   text-align: right; }
 
 .page-title {
-  text-align: center;
-  color: #fff; }
+  text-align: center; }
 
 /* ---------- Navigation portlet ---------- */
 .nav-menu ul {
@@ -55,4 +56,18 @@ body {
   color: #000;
   font-weight: bold;
   text-decoration: none; }
+
+/* ---------- Font attributes for the 'normal' fragment font ---------- */
+.portlet-title {
+  display: block;
+  font-size: 2em;
+  margin: 0; }
+
+.portlet-content {
+  font-size: medium;
+  font-family: cursive; }
+
+/************Footer***********/
+#footer {
+  text-align: center; }
 

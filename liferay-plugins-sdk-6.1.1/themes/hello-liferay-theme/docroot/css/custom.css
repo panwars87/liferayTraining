@@ -36,10 +36,12 @@ body {
 
 #wrapper{
 	background: steelblue;
+	position:relative;
+	top:55px;
 }
 
-#header{
-	background-image: url(../images/header-bg.jpg);
+#banner{
+	background-image: url(../images/header-chilli.jpg);
 }
 
 /* ---------- Logo ---------- */
@@ -57,7 +59,6 @@ body {
 
 .page-title{
 	text-align: center;
-	color:#fff;
 }
 
 /* ---------- Navigation portlet ---------- */
@@ -77,4 +78,22 @@ body {
 			text-decoration: none;
 		}
 	}
+}
+
+/* ---------- Font attributes for the 'normal' fragment font ---------- */
+
+.portlet-title {
+	display: block;
+	font-size: 2em;
+	margin: 0;
+}
+
+.portlet-content{
+	font-size: medium;
+	font-family: cursive;
+}
+
+/************Footer***********/
+#footer{
+	text-align:center;
 }
