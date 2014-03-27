@@ -2116,3 +2116,30 @@ body > .lfr-menu-list, body > .lfr-menu-list ul, .lfr-actions, .aui-dialog-conte
   top: 50%;
   width: 8px; }
 
+/**********Body************/
+body {
+  position: relative;
+  left: 120px;
+  width: 80%;
+  background: #6666CC;
+  font: 62.5%/1.4 Arial, Helvetica, Verdana, sans-serif; }
+
+/* ---------- Logo ---------- */
+.logo {
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
+  width: 100%; }
+
+/* ---------- Navigation portlet ---------- */
+.nav-menu {
+  text-align: right; }
+  .nav-menu ul {
+    padding-left: 10px; }
+  .nav-menu li a.ancestor {
+    font-weight: bold; }
+  .nav-menu li a.selected {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none; }
+

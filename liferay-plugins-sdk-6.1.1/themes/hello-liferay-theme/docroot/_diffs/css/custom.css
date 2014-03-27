@@ -22,3 +22,42 @@
 		width: 8px;
 	}
 }
+
+/**********Body************/
+body {
+	position:relative;
+	left:120px;
+	width:80%;
+	background: #6666CC;
+	font: 62.5%/1.4 Arial, Helvetica, Verdana, sans-serif;
+}
+
+/* ---------- Logo ---------- */
+
+.logo {
+	display: inline-block;
+	line-height: 1;
+	text-align:center;
+	width:100%;
+}
+
+/* ---------- Navigation portlet ---------- */
+.nav-menu {
+	text-align: right;
+	
+	ul {
+		padding-left: 10px;
+	}
+
+	li {
+		a.ancestor {
+			font-weight: bold;
+		}
+
+		a.selected {
+			color: #000;
+			font-weight: bold;
+			text-decoration: none;
+		}
+	}
+}
