@@ -3,6 +3,8 @@
 /* ---------- Add/remove page ---------- */
 
 .modify-pages {
+	text-align: right;
+	
 	li {
 		position: relative;
 		display: inline-block;
@@ -28,8 +30,16 @@ body {
 	position:relative;
 	left:120px;
 	width:80%;
-	background: #6666CC;
+	background: #666;
 	font: 62.5%/1.4 Arial, Helvetica, Verdana, sans-serif;
+}
+
+#wrapper{
+	background: steelblue;
+}
+
+#header{
+	background-image: url(../images/header-bg.jpg);
 }
 
 /* ---------- Logo ---------- */
@@ -41,10 +51,17 @@ body {
 	width:100%;
 }
 
+#signIn{
+	text-align: right;
+}
+
+.page-title{
+	text-align: center;
+	color:#fff;
+}
+
 /* ---------- Navigation portlet ---------- */
 .nav-menu {
-	text-align: right;
-	
 	ul {
 		padding-left: 10px;
 	}

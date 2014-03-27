@@ -1,28 +1,36 @@
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 /* ---------- Add/remove page ---------- */
-.modify-pages li {
-  position: relative;
-  display: inline-block; }
-.modify-pages .delete-tab {
-  background: #333333 url(../images/portlet/close_borderless.png) no-repeat 50%;
-  cursor: pointer;
-  display: block;
-  height: 8px;
-  margin-top: -7px;
-  padding: 3px;
-  position: absolute;
-  right: 1px;
-  text-indent: -9999em;
-  top: 50%;
-  width: 8px; }
+.modify-pages {
+  text-align: right; }
+  .modify-pages li {
+    position: relative;
+    display: inline-block; }
+  .modify-pages .delete-tab {
+    background: #333333 url(../images/portlet/close_borderless.png) no-repeat 50%;
+    cursor: pointer;
+    display: block;
+    height: 8px;
+    margin-top: -7px;
+    padding: 3px;
+    position: absolute;
+    right: 1px;
+    text-indent: -9999em;
+    top: 50%;
+    width: 8px; }
 
 /**********Body************/
 body {
   position: relative;
   left: 120px;
   width: 80%;
-  background: #6666CC;
+  background: #666;
   font: 62.5%/1.4 Arial, Helvetica, Verdana, sans-serif; }
+
+#wrapper {
+  background: steelblue; }
+
+#header {
+  background-image: url(../images/header-bg.jpg); }
 
 /* ---------- Logo ---------- */
 .logo {
@@ -31,15 +39,20 @@ body {
   text-align: center;
   width: 100%; }
 
-/* ---------- Navigation portlet ---------- */
-.nav-menu {
+#signIn {
   text-align: right; }
-  .nav-menu ul {
-    padding-left: 10px; }
-  .nav-menu li a.ancestor {
-    font-weight: bold; }
-  .nav-menu li a.selected {
-    color: #000;
-    font-weight: bold;
-    text-decoration: none; }
+
+.page-title {
+  text-align: center;
+  color: #fff; }
+
+/* ---------- Navigation portlet ---------- */
+.nav-menu ul {
+  padding-left: 10px; }
+.nav-menu li a.ancestor {
+  font-weight: bold; }
+.nav-menu li a.selected {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none; }
 

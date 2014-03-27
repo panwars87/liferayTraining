@@ -23,6 +23,12 @@ $theme.include($body_top_include)
 <div id="wrapper">
 	<header id="banner" role="banner">
 		<div id="heading">
+			<div id="signIn">
+			#if (!$is_signed_in)
+				<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
+			#end
+			</div>
+			
 			<h1 class="site-title">
 				<a class="$logo_css_class" href="$site_default_url" title="#language ("go-to") $site_name">
 					<img alt="$logo_description" height="$site_logo_height" src="$site_logo" width="$site_logo_width" />
@@ -39,10 +45,6 @@ $theme.include($body_top_include)
 				<span>$the_title</span>
 			</h2>
 		</div>
-
-		#if (!$is_signed_in)
-			<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
-		#end
 
 		#if ($has_navigation || $is_signed_in)
 			#parse ("$full_templates_path/navigation.vm")
