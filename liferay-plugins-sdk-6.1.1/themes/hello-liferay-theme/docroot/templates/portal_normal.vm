@@ -50,7 +50,7 @@ $theme.include($body_top_include)
 			#parse ("$full_templates_path/navigation.vm")
 		#end
 	</header>
-
+	
 	<div id="content">
 		<!--<nav class="site-breadcrumbs" id="breadcrumbs">
 			<h1>
@@ -73,7 +73,10 @@ $theme.include($body_top_include)
 
 	<footer id="footer" role="contentinfo">
 		<p class="powered-by">
-			#language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+			<!-- #language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a> -->
+			<!-- $theme.runtime("56") -->
+			#set($myContent = $journalContentUtil.getContent($group_id,"11083","view",$language_id,$theme_display))
+			$myContent
 		</p>
 	</footer>
 </div>

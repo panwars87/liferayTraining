@@ -4,5 +4,6 @@
 <display>
 	<category name="category.sample">
 		<portlet id="HelloLiferay" />
+		<portlet id="testing"></portlet>
 	</category>
 </display>

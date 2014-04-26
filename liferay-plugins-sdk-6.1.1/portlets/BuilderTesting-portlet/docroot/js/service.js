@@ -1,0 +1,1 @@
+Liferay.Service.register("Liferay.Service.LCert", "com.ys.liferay.cert.service", "BuilderTesting-portlet");

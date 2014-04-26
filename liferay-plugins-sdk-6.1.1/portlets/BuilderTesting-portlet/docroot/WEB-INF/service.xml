@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" 
+"http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+
+<service-builder package-path="com.ys.liferay.cert">
+    <namespace>LCert</namespace>
+    
+    <entity name="Inventory" local-service="true" remote-service="true">
+        <column name="productId" type="long" primary="true"></column>
+        <column name="productName" type="String"></column>
+        <column name="productCode" type="long" primary="true"></column>
+        <order by="asc">
+        	<order-column name="productId"></order-column>
+        </order>
+    </entity>
+</service-builder>

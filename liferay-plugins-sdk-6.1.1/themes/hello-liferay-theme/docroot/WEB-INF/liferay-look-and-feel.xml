@@ -5,5 +5,14 @@
 	<compatibility>
 		<version>6.1.2+</version>
 	</compatibility>
-	<theme id="hello-liferay" name="Hello Liferay" />
+	<theme id="hello-liferay" name="Hello Liferay">
+		<settings>
+			<setting configurable="true" key="header-type" type="textarea" value=""></setting>
+			<setting key="signIn" value="Mirchi Login!"></setting>
+			<setting configurable="true" key="bullet-style" 
+					 options="arrows,dots,classic,modern"
+			         value="dots"
+			/>
+		</settings>
+	</theme>
 </look-and-feel>
