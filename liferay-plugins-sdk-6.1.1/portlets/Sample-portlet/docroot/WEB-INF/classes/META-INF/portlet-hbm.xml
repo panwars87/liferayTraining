@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="com.ys.cert.model.Cars" />
+	<import class="com.ys.cert.model.Truck" />
+
+	<class name="com.ys.cert.model.impl.CarsImpl" table="Vehicle_Cars">
+		<cache usage="read-write" />
+		<id name="carId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="carName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="carModel" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="carModelYear" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="carColor" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="com.ys.cert.model.impl.TruckImpl" table="Vehicle_Truck">
+		<cache usage="read-write" />
+		<id name="truckId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="truckName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="truckModel" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="truckModelYear" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="truckColor" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

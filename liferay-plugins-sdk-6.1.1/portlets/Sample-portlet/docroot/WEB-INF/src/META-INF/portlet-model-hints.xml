@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="com.ys.cert.model.Cars">
+		<field name="carId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="carName" type="String" />
+		<field name="carModel" type="String" />
+		<field name="carModelYear" type="int" />
+		<field name="carColor" type="String" />
+	</model>
+	<model name="com.ys.cert.model.Truck">
+		<field name="truckId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="truckName" type="String" />
+		<field name="truckModel" type="String" />
+		<field name="truckModelYear" type="int" />
+		<field name="truckColor" type="String" />
+	</model>
+</model-hints>

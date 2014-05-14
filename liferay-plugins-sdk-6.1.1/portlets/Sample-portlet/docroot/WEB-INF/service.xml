@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.1.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_1_0.dtd">
+<service-builder package-path="com.ys.cert">
+	<author>AC70602</author>
+	<namespace>Vehicle</namespace>
+
+	<entity name="Truck" local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="truckId" type="long" primary="true" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="truckName" type="String" />
+		<column name="truckModel" type="String" />
+		<column name="truckModelYear" type="int" />
+		<column name="truckColor" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="truckName" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="TruckModel" return-type="Collection">
+			<finder-column name="truckModel" />
+		</finder>
+		
+	</entity>
+
+	<entity name="Cars" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="carId" type="long" primary="true" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="userId" type="long" />
+		<column name="userName" type="String" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="carName" type="String" />
+		<column name="carModel" type="String" />
+		<column name="carModelYear" type="int" />
+		<column name="carColor" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="carName" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="CarModel" return-type="Collection">
+			<finder-column name="carModel" />
+		</finder>
+		<finder name="CarModelYear" return-type="Collection">
+			<finder-column name="carModelYear" />
+		</finder>
+		<finder name="CarName" return-type="Collection">
+			<finder-column name="carName" />
+		</finder>
+		
+	</entity>
+</service-builder>
