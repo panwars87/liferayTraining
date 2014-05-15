@@ -4,5 +4,6 @@
 <display>
 	<category name="category.sample">
 		<portlet id="Sample" />
+		<portlet id="jenkins"></portlet>
 	</category>
 </display>
